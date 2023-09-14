@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage("printgaurav") {
             steps {
-                echo "printing gaurav"
+                echo "printing gauravedited"
             }
         }
         stage("printhello") {
