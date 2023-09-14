@@ -46,6 +46,8 @@ pipeline {
         stage('Approval'){
             steps {
                 input "please approve to proceed with deployment"
+                emailext body: "Please check the console output at $BUILD_URL/input.This link si valid for 1 min", to: "gaurav.8911@gmail.com", subject:'$PROJECT_NAME, Build Number is $BUIlD_NUMBER,$BUILD_STATUS'
+                }
                 
     }
         }
