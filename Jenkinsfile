@@ -39,7 +39,7 @@ pipeline {
                 success {
                     junit 'api-gateway/target/surefire-reports/*.xml'
                     archiveArtifacts 'api-gateway/target/*.jar'
-                    emailext body: "Please check the console output at $BUILD_URL", to: "gaurav.8911@gmail.com", subject:"$PROJECT_NAME, Build Number is $BUIlD_NUMBER"
+                    emailext body: "Please check the console output at $BUILD_URL", to: "gaurav.8911@gmail.com", subject:'$PROJECT_NAME, Build Number is $BUIlD_NUMBER'
                 }
             }
         }
