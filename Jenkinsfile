@@ -42,6 +42,20 @@ pipeline {
                 }
             }
         }
+        stage('Approval'){
+            steps {
+                input "please approve to proceed with deployment"
+                
+    }
+        }
+                stage('Deployment'){
+            steps {
+                echo "Got Approval deploying application."
+                
     }
 }
+    }
+}
+        
+    
 
