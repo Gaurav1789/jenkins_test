@@ -15,7 +15,7 @@ pipeline {
         }
         stage("printhello") {
             steps {
-                echo "printing hello"
+                echo "printing hello1"
             }
         }
         stage('Build') {
