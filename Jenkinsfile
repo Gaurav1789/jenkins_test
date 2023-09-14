@@ -7,14 +7,14 @@ pipeline {
     }
 
     stages {
-        stage("print") {
+        stage("printgaurav") {
             steps {
-                echo "printing 1"
+                echo "printing gaurav"
             }
         }
-        stage("print2") {
+        stage("printhello") {
             steps {
-                echo "printing 2"
+                echo "printing hello"
             }
         }
         stage('Build') {
